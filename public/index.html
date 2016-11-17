@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app= "hotel">
 <head>
   <title>MEAN hotel</title>
   <link href="css/bootstrap.min.css" rel="stylesheet"/>
   <link href="css/custom.css" rel="stylesheet"/>
 </head>
-<body>
+<body ng-controller="hotelCtrl as hotel">
 
   <h1>Hotel</h1>
+  	<ul>
+  		<li ng-repeat="item in users">{{item.firstName}}</li>
+  	</ul>
 
   <script src="jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 
 </body>
 </html>
